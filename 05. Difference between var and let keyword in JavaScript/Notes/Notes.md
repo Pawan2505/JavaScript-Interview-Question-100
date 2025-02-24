@@ -36,7 +36,7 @@ Both **`var`** and **`let`** are used to declare variables, but they have key di
 ### Note:
 - Use **`let`** for block-scoped variables and avoid redeclaration issues.
 - **`var`** is generally avoided due to its function-scoping and hoisting behavior, which can lead to bugs in larger codebases.
-```
+
 
 
 
