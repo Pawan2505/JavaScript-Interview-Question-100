@@ -1,6 +1,6 @@
 ### 3. **Why do we use the word “debugger” in JavaScript?**
 
-```markdown
+
 # The "debugger" Statement in JavaScript
 
 The **`debugger`** statement in JavaScript is used to stop the execution of the code and invoke the debugging process in the browser.

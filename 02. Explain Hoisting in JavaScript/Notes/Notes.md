@@ -1,6 +1,6 @@
 ### 2. Explain Hoisting in JavaScript
 
-```markdown
+
 # Hoisting in JavaScript
 
 **Hoisting** is a behavior in JavaScript where **variables** and **functions** are moved to the top of their scope (either global or local) during the compilation phase, even before the code is executed. 

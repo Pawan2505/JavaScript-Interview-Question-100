@@ -1,6 +1,6 @@
 ### 1. What are the different data types present in JavaScript?
 
-```markdown
+
 # Different Data Types in JavaScript
 
 JavaScript has 8 basic data types:
@@ -18,6 +18,3 @@ JavaScript has 8 basic data types:
     - **Object**: Used to store collections of data and more complex entities. E.g., `let person = { name: "John", age: 30 };`.
 
 Each of these data types has unique characteristics and behavior in JavaScript.
-```
-
----

@@ -1,9 +1,5 @@
-
----
-
 ### 4. **Difference between “ == “ and “ === “ operators.**
 
-```markdown
 # Difference Between "==" and "===" Operators
 
 In JavaScript, **`==`** and **`===`** are comparison operators, but they behave differently.

@@ -1,6 +1,5 @@
 ### 5. **Difference between `var` and `let` keyword in JavaScript.**
 
-```markdown
 # Difference Between `var` and `let` Keyword in JavaScript
 
 Both **`var`** and **`let`** are used to declare variables, but they have key differences in scope, hoisting, and reassignment:
@@ -39,5 +38,5 @@ Both **`var`** and **`let`** are used to declare variables, but they have key di
 - **`var`** is generally avoided due to its function-scoping and hoisting behavior, which can lead to bugs in larger codebases.
 ```
 
----
+
 
