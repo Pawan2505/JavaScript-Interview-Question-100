@@ -27,9 +27,12 @@ For example, when you try to perform operations between different data types, Ja
    ```javascript
    let result = true + 5;
    console.log(result); // 6 (number)
-   ```
+   ```          
    JavaScript converts `true` to `1` and adds it to `5`.
 
 ### Note:
 Implicit type coercion is done automatically by JavaScript when you mix different data types in operations, making it important to be aware of when writing code.
-```
+
+1.0/87
+
+   
