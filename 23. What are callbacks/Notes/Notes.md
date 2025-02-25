@@ -3,7 +3,7 @@
 **Definition:**
 A **callback** is a function that is passed into another function as an argument and is executed after the completion of a task or event. In simple terms, it’s a **"function that gets called back"** after a certain operation is completed.
 
- **callbacks** for asynchronous operations such as fetching data from APIs (for example, fetching data from a database of government services, or a train booking system), where the task might take time and the user should not be kept waiting for the result. The callback will be executed once the task is completed.
+**callbacks** for asynchronous operations such as fetching data from APIs (for example, fetching data from a database of government services, or a train booking system), where the task might take time and the user should not be kept waiting for the result. The callback will be executed once the task is completed.
 
 ### **Key Concepts of Callbacks:**
 
@@ -12,18 +12,19 @@ A **callback** is a function that is passed into another function as an argument
 
    ```javascript
    function greet(name, callback) {
-       console.log("Namaste, " + name);  // Namaste is a common greeting in India.
-       callback(); // calling the callback function
+     console.log("Namaste, " + name); // Namaste is a common greeting in India.
+     callback(); // calling the callback function
    }
 
    function sayGoodbye() {
-       console.log("Goodbye!");
+     console.log("Goodbye!");
    }
 
    greet("Arun", sayGoodbye);
    ```
 
    **Output:**
+
    ```
    Namaste, Arun
    Goodbye!
@@ -41,14 +42,15 @@ A **callback** is a function that is passed into another function as an argument
    ```javascript
    console.log("Start");
 
-   setTimeout(function() {
-       console.log("This is a callback function!");
-   }, 2000);  // Executes after 2 seconds
+   setTimeout(function () {
+     console.log("This is a callback function!");
+   }, 2000); // Executes after 2 seconds
 
    console.log("End");
    ```
 
    **Output:**
+
    ```
    Start
    End
@@ -65,18 +67,19 @@ A **callback** is a function that is passed into another function as an argument
    For instance, when interacting with databases or web servers, you may encounter errors due to connection issues or server downtime. Here's an example using the **fs.readFile** function in Node.js:
 
    ```javascript
-   const fs = require('fs');
+   const fs = require("fs");
 
-   fs.readFile('example.txt', 'utf8', function(err, data) {
-       if (err) {
-           console.log('Error reading file:', err);
-           return;
-       }
-       console.log('File data:', data);
+   fs.readFile("example.txt", "utf8", function (err, data) {
+     if (err) {
+       console.log("Error reading file:", err);
+       return;
+     }
+     console.log("File data:", data);
    });
    ```
 
    In this example:
+
    - The first parameter (`err`) is checked to see if there was an error while reading the file.
    - If there's an error (e.g., if the file doesn't exist), the function returns early and logs the error.
    - If there's no error, the function proceeds with reading the file.
@@ -86,9 +89,11 @@ A **callback** is a function that is passed into another function as an argument
 ### **Advantages of Using Callbacks:**
 
 1. **Handling Asynchronous Operations:**
+
    - JavaScript runs on a single-threaded event loop, so **callbacks** allow asynchronous code to run without blocking the rest of the program. In India, with varied network speeds and server response times, using callbacks allows us to handle these situations efficiently without freezing the application.
 
 2. **Non-blocking Code Execution:**
+
    - Callbacks allow **non-blocking execution**, meaning that tasks like fetching data from APIs or processing large datasets don’t freeze the application. For example, when you search for flight tickets or check train availability on an Indian railway website, the page doesn’t freeze while the data is being fetched; instead, callbacks make sure the data is processed once the request is complete.
 
 3. **Code Reusability:**
@@ -99,17 +104,18 @@ A **callback** is a function that is passed into another function as an argument
 ### **Common Pitfalls of Callbacks:**
 
 1. **Callback Hell (Pyramid of Doom):**
+
    - In some cases, callbacks are nested within other callbacks, making the code harder to read. This problem is known as **callback hell**. This is a common issue faced when building complex web applications, such as **train booking systems**, where multiple async tasks (like checking availability, processing payments, and sending tickets) are chained together.
 
    Example of callback hell:
 
    ```javascript
-   asyncFunction1(function() {
-       asyncFunction2(function() {
-           asyncFunction3(function() {
-               // Do something
-           });
+   asyncFunction1(function () {
+     asyncFunction2(function () {
+       asyncFunction3(function () {
+         // Do something
        });
+     });
    });
    ```
 
@@ -126,4 +132,3 @@ A **callback** is a function that is passed into another function as an argument
 - While callbacks are useful, it's important to manage **callback hell** and error handling properly, as failure to do so can make the code difficult to maintain and debug.
 
 ---
-
